@@ -51,8 +51,8 @@ def self.new_from_filename(song)
   new_song = self.new
   string = song.chomp(".mp3")
   array = string.split(' - ') 
-  self.artist_name = array[0]
-  self.name = array[1]
+  new_song.artist_name = array[0]
+  new_song.name = array[1]
 end
 
 def self.destroy_all
