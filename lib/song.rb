@@ -53,7 +53,6 @@ def self.new_from_filename(song)
   array = string.split(' - ') 
   new_song.artist_name = array[0]
   new_song.name = array[1]
-  binding.pry
 end
 
 def self.destroy_all
