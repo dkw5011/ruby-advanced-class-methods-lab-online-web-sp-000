@@ -48,11 +48,13 @@ def self.alphabetical
 end
 
 def self.new_from_filename(song)
-  array = song.delete(".mp3")
-  array_split = array.split('-')
+  new_song = self.new
+  string = song.chomp(".mp3")
+  array = string.split('-')
   binding.pry
-  artist_name = array_split[0]
-  name = array_split[1]
+  artist_name = new_song.array[0]
+  name = array[1]
+  name = new_song.name
 end
 
 def self.destroy_all
