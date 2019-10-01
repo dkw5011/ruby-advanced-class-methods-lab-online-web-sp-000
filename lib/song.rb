@@ -50,10 +50,9 @@ end
 def self.new_from_filename(song)
   string = song.chomp(".mp3")
   array = string.split('-')
-  binding.pry
   artist_name = array[0]
   name = array[1]
-  
+  binding.pry
 end
 
 def self.destroy_all
