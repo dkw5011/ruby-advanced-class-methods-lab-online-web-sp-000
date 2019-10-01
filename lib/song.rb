@@ -53,6 +53,7 @@ def self.new_from_filename(song)
   array = string.split(' - ') 
   new_song.artist_name = array[0]
   new_song.name = array[1]
+  new_song.save
   new_song
 end
 
@@ -61,8 +62,7 @@ def self.destroy_all
 end
 
 def self.create_from_filename(filename)
-  song = self.new_from_filename
-  song.save
+  self.new_from_filename(filename)
 end
 
 end
