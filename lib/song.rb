@@ -54,7 +54,7 @@ def self.new_from_filename(song)
   binding.pry
   artist_name = new_song.array[0]
   name = array[1]
-  name = new_song.name
+  
 end
 
 def self.destroy_all
