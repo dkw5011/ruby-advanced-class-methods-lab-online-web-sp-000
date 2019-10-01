@@ -52,8 +52,8 @@ def self.new_from_filename(song)
   string = song.chomp(".mp3")
   array = string.split('-')
   binding.pry
-  artist_name = array[0]
-  name = array[1]
+  self.artist_name = array[0]
+  self.name = array[1]
   
 end
 
